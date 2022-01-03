@@ -1,0 +1,1 @@
+data class Book (val idbuku:String?,val judulbuku:String?,val namapengarang:String?,val tahunterbit:String?, val penerbit:String?)
