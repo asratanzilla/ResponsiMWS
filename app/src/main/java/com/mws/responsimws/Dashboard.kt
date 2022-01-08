@@ -66,10 +66,10 @@ class Dashboard : AppCompatActivity() {
 
                          arrayList.add(
                              Book(
-                                 jsonObject.getString("idbukku"),
-                                 jsonObject.getString("judulbuku"),
-                                 jsonObject.getString("namapengarang"),
-                                 jsonObject.getString("tahunterbit"),
+                                 jsonObject.getString("id_buku"),
+                                 jsonObject.getString("judul_buku"),
+                                 jsonObject.getString("nama_pengarang"),
+                                 jsonObject.getString("tahun_terbit"),
                                  jsonObject.getString("penerbit")
                              )
                          )

@@ -74,7 +74,7 @@ class ManageBookActivity : AppCompatActivity() {
         loading.show()
 
         AndroidNetworking.post(ApiEndPoint.CREATE)
-            .addBodyParameter("Id_buku",txtIdBuku.text.toString())
+            .addBodyParameter("id_buku",txtIdBuku.text.toString())
             .addBodyParameter("judul_buku",txtJudulBuku.text.toString())
             .addBodyParameter("nama_pengarang",txtNamaPengarang.text.toString())
             .addBodyParameter("tahun_terbit",txtTahunTebit.text.toString())
