@@ -4,7 +4,7 @@ class ApiEndPoint {
 
     companion object {
 
-        private val SERVER = "http://192.168.56.1/responsi/"
+        val SERVER = "http://10.0.2.2/responsi/"
         val CREATE = SERVER+"create.php"
         val READ = SERVER+"read.php"
         val DELETE = SERVER+"delete.php"

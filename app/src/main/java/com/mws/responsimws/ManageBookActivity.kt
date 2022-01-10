@@ -61,7 +61,7 @@ class ManageBookActivity : AppCompatActivity() {
         txtNamaPengarang.setText(i.getStringExtra("nama_pengarang"))
         txtTahunTebit.setText(i.getStringExtra("tahun_terbit"))
         txtPenerbit.setText(i.getStringExtra("penerbit"))
-        txtIdBuku.isEnabled = false
+        txtIdBuku.setText(i.getStringExtra("id_buku"))
 
         btnCreate.visibility = View.GONE
         btnUpdate.visibility = View.VISIBLE
@@ -108,7 +108,7 @@ class ManageBookActivity : AppCompatActivity() {
         loading.show()
 
         AndroidNetworking.post(ApiEndPoint.UPDATE)
-            .addBodyParameter("Id_buku",txtIdBuku.text.toString())
+            .addBodyParameter("id_buku",txtIdBuku.text.toString())
             .addBodyParameter("judul_buku",txtJudulBuku.text.toString())
             .addBodyParameter("nama_pengarang",txtNamaPengarang.text.toString())
             .addBodyParameter("tahun_terbit",txtTahunTebit.text.toString())

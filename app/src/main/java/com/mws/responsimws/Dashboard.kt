@@ -33,7 +33,6 @@ class Dashboard : AppCompatActivity() {
 
     }
 
-
     override fun onResume() {
         super.onResume()
         loadAllBook()
